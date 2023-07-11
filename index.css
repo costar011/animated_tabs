@@ -20,3 +20,32 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.tabs__conatiner {
+    display: flex;
+    flex-direction: column;
+    width: 169.74px;
+}
+
+.tabs {
+    display: flex;
+    padding: 10px 0;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.tab {
+    padding: 10px 0;
+    margin: 10px;
+    color: #bcbcbc;
+    transition: all 0.4s;
+}
+
+.tab i.active {
+    color: #2a2f4f;
+    font-weight: 700;
+}
+
+.tab i {
+    cursor: pointer;
+}
