@@ -49,3 +49,43 @@ body {
 .tab i {
     cursor: pointer;
 }
+
+.pointer {
+    width: 53.79px;
+    height: 15px;
+    background: #fff;
+    position: relative;
+    transition: all 0.4s;
+}
+
+.pointer::before , .pointer::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    display: inline-block;
+
+    width: 25px;
+    height: 15px;
+    background: #2a2f4f;
+    border-radius: 50px;
+}
+
+.pointer::before {
+    left: -7.5px;
+}
+
+.pointer::after {
+    right: -7.5px;
+}
+
+.content__conatiner {
+    width: 100%;
+    background: #fff;
+    transform: translateY(-1px);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.content {
+    padding: 10px;
+}
