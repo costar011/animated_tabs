@@ -1,91 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Arimo:wght@600&family=Merriweather:wght@300&family=Noto+Sans:wght@300&family=Roboto+Condensed:wght@300&family=Rubik:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Arimo:wght@600&family=Merriweather:wght@300&family=Noto+Sans:wght@300&family=Roboto+Condensed:wght@300&family=Rubik:wght@500&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arimo', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arimo", sans-serif;
 }
 
 body {
-    background: #2a2f4f;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  background: #2a2f4f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .conatiner {
-    height: 400px;
-    display: flex;
-    justify-content: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
 }
 
 .tabs__conatiner {
-    display: flex;
-    flex-direction: column;
-    width: 169.74px;
+  display: flex;
+  flex-direction: column;
+  width: 169.74px;
 }
 
 .tabs {
-    display: flex;
-    padding: 10px 0;
-    background: #fff;
-    border-radius: 5px;
+  display: flex;
+  padding: 10px 0;
+  background: #fff;
+  border-radius: 5px;
 }
 
 .tab {
-    padding: 10px 0;
-    margin: 10px;
-    color: #bcbcbc;
-    transition: all 0.4s;
+  padding: 10px 0;
+  margin: 10px;
+  color: #bcbcbc;
+  transition: all 0.4s;
 }
 
 .tab i.active {
-    color: #2a2f4f;
-    font-weight: 700;
+  color: #2a2f4f;
+  font-weight: 700;
 }
 
 .tab i {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .pointer {
-    width: 53.79px;
-    height: 15px;
-    background: #fff;
-    position: relative;
-    transition: all 0.4s;
+  width: 53.79px;
+  height: 15px;
+  background: #fff;
+  position: relative;
+  transition: all 0.4s;
 }
 
-.pointer::before , .pointer::after {
-    content: " ";
-    position: absolute;
-    top: 0;
-    display: inline-block;
+.pointer::before,
+.pointer::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  display: inline-block;
 
-    width: 25px;
-    height: 15px;
-    background: #2a2f4f;
-    border-radius: 50px;
+  width: 25px;
+  height: 15px;
+  background: #2a2f4f;
+  border-radius: 50px;
 }
 
 .pointer::before {
-    left: -7.5px;
+  left: -7.5px;
 }
 
 .pointer::after {
-    right: -7.5px;
+  right: -7.5px;
 }
 
 .content__conatiner {
-    width: 100%;
-    background: #fff;
-    transform: translateY(-1px);
-    border-radius: 5px;
-    overflow: hidden;
+  width: 100%;
+  background: #fff;
+  transform: translateY(-1px);
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .content {
-    padding: 10px;
+  padding: 10px;
+}
+
+.content.active {
+  display: block;
+}
+
+.content p {
+  font-size: 14px;
+  margin-top: 10px;
 }
